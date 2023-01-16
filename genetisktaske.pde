@@ -19,11 +19,11 @@ for (int i = 0; i < lines.length; i++) {
 
 
 class Rygsæk {
-    rygsæk() {
+  void rygsæk() {
     for (int i = 0; i < rindhold.length; i++) {
       rindhold[i] = random(1) < 0.5;
     }
-    }
+  }
 
 
   float fitness;
@@ -53,12 +53,10 @@ class Rygsæk {
     rweight = score;
     println(rweight);
   }
-}
 
-void setup() {
-    for (int i = 0; i < rygsækny.length; i++) {
-        rygsækny[i] = new Rygsæk();
-    }
-
+void setup () {
+  for (int i = 0; i < rygsækny.length; i++) 
+  {
+    rygsækny[i] = new Rygsæk();
+  }
 }
- 
