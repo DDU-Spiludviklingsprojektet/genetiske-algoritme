@@ -1,0 +1,4 @@
+*.autosave 
+data/.DS_Store 
+.DS_Store 
+windows-amd64
